@@ -11,9 +11,9 @@ Coming Soon
 * Tell me if anything goes wrong
 # Checklist
 **This lil' checklist shows you what I need to do/have done.**
-- [ ] Actually make the script
+- [x] Actually make the script
 - [x] Finish the modified Google Tutorial part of the tutorial
-- [ ] Finish the rest of the Tutorial
+- [x] Finish the rest of the Tutorial
 - [ ] Test said script
 - [ ] Make YouTube video
 - [ ] Edit said video
@@ -118,11 +118,56 @@ Open the Activity Controls page for the Google account that you want to use with
 
 # Using the script/Tutorial
 
-## Work in progress
 1. Copy the repository to the home directory.
 ```
 cd /home/pi
 git clone https://github.com/YTThatOneGuy/AssistantPi-Custom-installer-Pi3.git
 ```
+2. Make the script(s) executable
+```
+chmod +x Install1.sh
+chmod +x Install2.sh
+chmod +x run.sh
+chmod +x update.sh
+```
+3. Run Installer 1
+```
+./Install1.sh
+```
+* **Run Installer 2 ONLY if errors appear**
+```
+./Install2.sh
+```
+4.
+Run the authorization tool. Remove the --headless flag on the end if you are using the terminal directly on the Pi (VNC session or keyboard plugged in to the Pi)
+```
+google-oauthlib-tool --client-secrets /path/to/client_secret_client-id.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
+```
+You should see a URL displayed in the terminal:
+```
+Please go to this URL: https://...
+```
+Copy-Paste the link into your browser of choice on any device. 
 
-###### To be continued...
+After you approve, a code will appear in your browser, such as "6/XXXX". Copy and paste this code into the terminal:
+```
+Enter the authorization code:
+```
+>If authorization was successful, you will see OAuth credentials initialized in the terminal.
+
+>If instead you see InvalidGrantError, then an invalid code was entered. Try again, taking care to copy and paste the entire code.
+
+5. Start the assistant
+```
+google-assistant-demo
+```
+*Try saying "Okay Google" or "Hey Google" and a query**
+* Press ctrl+C at any time to stop it.
+6. To start the assistant again from the home directory **(For Example: You restarted the Pi)**
+cd AssistantPi-Custom-installer-Pi3
+./run.sh
+7. To install Assistant updates from the home directory
+```
+cd AssistantPi-Custom-installer-Pi3
+./update.sh
+```
