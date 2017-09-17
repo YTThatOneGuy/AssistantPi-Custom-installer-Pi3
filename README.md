@@ -72,11 +72,26 @@ sudo raspi-config
 Go to **Advanced options > Audio** and select the desired output device.
 5. Repeat Step 1 to verify that recording and playback work. If it's still not working, check that the microphone and speaker are properly connected. If this is not the issue, then try a different microphone or speaker.
 
+## Configure a Developer Project and Account Settings
+### Configure a Google Developer Project
+> A Google Developer Project gives your device access to the Google Assistant API. The project tracks quota usage and gives you valuable metrics for the requests made from your device.
+To enable access to the Google Assistant API, do the following on your development machine:
+In the Cloud Platform Console, go to the Projects page. Select an existing project or create a new project.
+
+[GO TO THE PROJECTS PAGE] (https://console.cloud.google.com/project)
+
+
+
+
+
+
+
+
+## Work in progress
 1. Copy the repository to the home directory.
 ```
 cd /home/pi
 git clone https://github.com/YTThatOneGuy/AssistantPi-Custom-installer-Pi3.git
 ```
-.
 
 ###### To be continued...
