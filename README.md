@@ -78,7 +78,7 @@ Go to **Advanced options > Audio** and select the desired output device.
 To enable access to the Google Assistant API, do the following on your development machine:
 In the Cloud Platform Console, go to the Projects page. Select an existing project or create a new project.
 
-[GO TO THE PROJECTS PAGE] (https://console.cloud.google.com/project)
+[GO TO THE PROJECTS PAGE](https://console.cloud.google.com/project)
 
 
 
