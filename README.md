@@ -9,6 +9,15 @@ Coming Soon
 # Notes before starting
 * I'm going to assume at this point that you already have SSH access on your Pi
 * Tell me if anything goes wrong
+# Checklist
+**This lil' checklist shows you what I need to do/have done.**
+[] Actually make the script
+[] Finish the modified Google Tutorial
+[] Make the Tutorial
+[] Test said script
+[] Make YouTube video
+[] Edit said video
+
 # Tutorial
 ## Configure and Test the Audio
 **The following steps are modified from Google's official documentation.**
@@ -76,10 +85,18 @@ Go to **Advanced options > Audio** and select the desired output device.
 ### Configure a Google Developer Project
 > A Google Developer Project gives your device access to the Google Assistant API. The project tracks quota usage and gives you valuable metrics for the requests made from your device.
 To enable access to the Google Assistant API, do the following on your development machine:
-In the Cloud Platform Console, go to the Projects page. Select an existing project or create a new project.
-
+1. In the Cloud Platform Console, go to the Projects page. Select an existing project or create a new project.
 [GO TO THE PROJECTS PAGE](https://console.cloud.google.com/project)
+2. Enable the Google Assistant API on the project you selected (see the [Terms of Service](https://developers.google.com/assistant/sdk/terms-of-service)).
+[ENABLE THE API](https://console.developers.google.com/apis/api/embeddedassistant.googleapis.com/overview)
+Click **Enable.**
+3. Create an OAuth Client ID with the following steps:
 
+Create the client ID. 
+CREATE AN OAUTH CLIENT ID
+You may need to set a product name for the product consent screen. On the OAuth consent screen tab, give the product a name and click Save.
+Click Other and give the client ID a name.
+Click Create. A dialog box appears that shows you a client ID and secret. (No need to remember or save this, just close the dialog.)
 
 
 
