@@ -11,12 +11,12 @@ Coming Soon
 * Tell me if anything goes wrong
 # Checklist
 **This lil' checklist shows you what I need to do/have done.**
-[ ] Actually make the script
-[ ] Finish the modified Google Tutorial
-[ ] Make the Tutorial
-[ ] Test said script
-[ ] Make YouTube video
-[ ] Edit said video
+- [ ] Actually make the script
+- [ ] Finish the modified Google Tutorial
+- [ ] Make the Tutorial
+- [ ] Test said script
+- [ ] Make YouTube video
+- [ ] Edit said video
 
 # Tutorial
 ## Configure and Test the Audio
