@@ -12,8 +12,8 @@ Coming Soon
 # Checklist
 **This lil' checklist shows you what I need to do/have done.**
 - [ ] Actually make the script
-- [ ] Finish the modified Google Tutorial
-- [ ] Make the Tutorial
+- [x] Finish the modified Google Tutorial part of the tutorial
+- [ ] Finish the rest of the Tutorial
 - [ ] Test said script
 - [ ] Make YouTube video
 - [ ] Edit said video
@@ -92,17 +92,31 @@ To enable access to the Google Assistant API, do the following on your developme
 Click **Enable.**
 3. Create an OAuth Client ID with the following steps:
 
-Create the client ID. 
-CREATE AN OAUTH CLIENT ID
-You may need to set a product name for the product consent screen. On the OAuth consent screen tab, give the product a name and click Save.
-Click Other and give the client ID a name.
-Click Create. A dialog box appears that shows you a client ID and secret. (No need to remember or save this, just close the dialog.)
+* Create the client ID. 
+* [CREATE AN OAUTH CLIENT ID](https://console.developers.google.com/apis/credentials/oauthclient)
+* You may need to set a product name for the product consent screen. On the OAuth consent screen tab, give the product a name and click Save.
+* Click **Other** and give the client ID a name.
+* Click **Create.** A dialog box appears that shows you a client ID and secret. (No need to remember or save this, just close the dialog.)
+* Click ⬇ (at the far right of screen) for the client ID to download the client secret JSON file (``` client_secret_<client-id>.json ```).
 
+4. Copy the client_secret_<client-id>.json file from your development machine to your device. This step is not necessary if you downloaded this file directly to your device.
 
+In a later step, you will use this file to authorize the Google Assistant SDK sample to make Google Assistant queries.
 
+###Set activity controls for your account
 
+In order to use the Google Assistant, you must share certain activity data with Google. The Google Assistant needs this data to function properly; this is not specific to the SDK.
 
+Open the Activity Controls page for the Google account that you want to use with the Assistant. You can use any Google account, it does not need to be your developer account.
 
+**Ensure the following toggle switches are enabled (blue):**
+
+* Web & App Activity
+  * In addition, be sure to select the Include Chrome browsing history and activity from websites and apps that use Google services checkbox.
+* Device Information
+* Voice & Audio Activity
+
+# Using the script/Tutorial
 
 ## Work in progress
 1. Copy the repository to the home directory.
