@@ -9,10 +9,12 @@ Coming Soon
 # Notes before starting
 * I'm going to assume at this point that you already have SSH access on your Pi
 * Tell me if anything goes wrong
-#Tutorial
-1. Copy the reposity.
+# Tutorial
+1. Copy the repository to the home directory.
 ```
+cd /home/pi
 git clone https://github.com/YTThatOneGuy/AssistantPi-Custom-installer-Pi3.git
 ```
+2. 
 
 ###### To be continued...
